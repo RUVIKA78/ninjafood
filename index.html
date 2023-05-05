@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja food</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+
+<body class="text-red-900 font-sans p-4">
+
+    <div class="grid md:grid-cols-4">
+        <!-- content wrapper -->
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right ">
+
+                <div class="flex justify-between items-center">
+
+
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-400 ">
+                        <a href="#" class="hover:text-gray-700">Food Ninja</a>
+                    </h1>
+                </div>
+                <div class="px-r cursor-pointer md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+
+
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="burger">
+                    <li>
+                        <a class="text-gray-700 hover:text-red-700 cursor:pointer px-4 flex justify-end border-primary border-r-4" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 ml-2">
+                                <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
+                              </svg>
+                              
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="mr-6">
+                        <a class="text-gray-700 hover:text-red-700 cursor:pointer px-4 flex justify-end" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 ml-2">
+                                <path d="M10.75 16.82A7.462 7.462 0 0115 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0018 15.06v-11a.75.75 0 00-.546-.721A9.006 9.006 0 0015 3a8.963 8.963 0 00-4.25 1.065V16.82zM9.25 4.065A8.963 8.963 0 005 3c-.85 0-1.673.118-2.454.339A.75.75 0 002 4.06v11a.75.75 0 00.954.721A7.506 7.506 0 015 15.5c1.579 0 3.042.487 4.25 1.32V4.065z" />
+                              </svg>
+                              
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                            <a href="#" class="text-gray-700 hover:text-red-700 cursor:pointer px-4 flex justify-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 ml-2">
+                                <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" />
+                              </svg>
+                              
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- end of wrapper -->
+        <main class="px-16 py-16 bg-gray-100 md:col-span-3">
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="btn text-primary border-primary border-2 md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log In</a>
+                <a href="#" class="btn text-primary  border-primary border-2 ml-2 md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign Up</a>
+            </div>
+
+            <!-- <div class="flex items-center">
+                <div class="bg-red-500 h-6 w-4"></div>
+                <div class="bg-blue-500 h-8 w-4"></div>
+                <div class="bg-green-500 h-10 w-4"></div>
+
+
+
+            </div> -->
+            <header>
+                <div class="mb-3">
+                    <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+                      <input
+                        type="search"
+                        class="relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                        placeholder="Search"
+                        aria-label="Search"
+                        aria-describedby="button-addon2" />
+                  
+                      <!--Search icon-->
+                      <span
+                        class="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
+                        id="basic-addon2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          class="h-5 w-5">
+                          <path
+                            fill-rule="evenodd"
+                            d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                            clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                <h2 class="text-red-800 text-6xl font-sans">
+                    Recipes
+                </h2>       
+                <h3 class="text-2xl">
+                    For Ninjas
+                </h3>
+
+            </header>
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 ">Latest Recipes</h4>
+            <div class="mt-8 grid lg:grid-cols-3 gap-10 ">
+
+                <div class="hover:shadow-lg">
+                    <!-- cards goes here -->
+                    <div class="card">
+                        <img src="pavbhaji.jfif" alt="pavbhaji" class="w-full h-32 sm:h-48 object-cover">
+                        <div>
+                            <span class="ml-2">
+                                Pav Bhaji
+                            </span>
+                            <span class="block text-gray-700 ml-2">Recipe By Vrutika</span>
+                        </div>
+                        <div class="badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
+                              </svg>
+                              
+                            
+                            <span>25 mins </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="frankie.jfif" alt="frankie" class="w-full h-32 sm:h-48 object-cover">
+                    <div>
+                        <span class="ml-2">
+                            Frankie
+                        </span>
+                        <span class="block text-gray-700 ml-2">Recipe By Vrutika</span>
+                    </div>
+                    <div class="badge">
+                        <span>25 mins </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="chococake.jfif" alt="chococake" class="w-full h-32 sm:h-48 object-cover">
+                    <div>
+                        <span class="ml-2">
+                            Chocolate Cake
+                        </span>
+                        <span class="block text-gray-700 ml-2">Recipe By Vrutika</span>
+                    </div>
+                    <div class="badge">
+                        <span>25 mins </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="sandwich.jfif" alt="sandwich" class="w-full h-32 sm:h-48 object-cover">
+                    <div>
+                        <span class="ml-2">
+                            Sandwich
+                        </span>
+                        <span class="block text-gray-700 ml-2">Recipe By Vrutika</span>
+                    </div>
+                    <div class="badge">
+                        <span>25 mins </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="paneer.jfif" alt="paneer" class="w-full h-32 sm:h-48 object-cover">
+                    <div>
+                        <span class="ml-2">
+                            Paneer Sabji
+                        </span>
+                        <span class="block text-gray-700 ml-2">Recipe By Vrutika</span>
+                    </div>
+                    <div class="badge">
+                        <span>25 mins </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="noodles.jfif" alt="noodles" class="w-full h-32 sm:h-48 object-cover">
+                    <div>
+                        <span class="ml-2">
+                            Noodles
+                        </span>
+                        <span class="block text-gray-700 ml-2">Recipe By Vrutika</span>
+                    </div>
+                    <div class="badge">
+                        <span>25 mins </span>
+                    </div>
+                </div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Populated Recipes</h4>
+                <div>
+                    <!-- cards goes here  -->
+
+
+
+
+                </div>
+                <div class="flex justify-center">
+                    <div class="btn  text-primary  border-primary border-2 hover:shadow-inner transform hover:scale-100 hover:bg-opacity-40 transition ease-out duration-300">
+                        Load More
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
